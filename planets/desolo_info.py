@@ -3,7 +3,7 @@ from PIL import ImageTk,Image
 
 root = tk.Tk()
 secondLevel = tk.Frame(master=root)
-root.geometry('350x650')
+root.geometry('350x500')
 root.title('Astroneer Wiki')
 l1 = tk.Label(text="Desolo Planet Info", fg="black", bg="snow")
 
@@ -38,21 +38,19 @@ ammonium_icon = ImageTk.PhotoImage(Image.open(img_ammonium))
 astronium_icon = ImageTk.PhotoImage(Image.open(img_astronium))
 sphalerite_icon = ImageTk.PhotoImage(Image.open(img_sphalerite))
 malachite_icon = ImageTk.PhotoImage(Image.open(img_malachite))
+wolframite_icon = ImageTk.PhotoImage(Image.open(img_wolframite))
 hydrogen_icon = ImageTk.PhotoImage(Image.open(img_hydrogen))
 nitrogen_icon = ImageTk.PhotoImage(Image.open(img_nitrogen))
 
 #Insert text into window
-l1 = tk.Label(root, text="SYLVIA RESOURCES\n===================\nCompound\nResin\nOrganic\nClay\nGraphite\nQuartz\nLaterite\nAmmonium\nAstronium", font="Helvetica")
+l1 = tk.Label(root, text="DESOLO RESOURCES\n===================\nCompound\nResin\nOrganic\nClay\nGraphite\nQuartz\nLaterite\nAmmonium\nAstronium", font="Helvetica")
 l1.place(x=50, y=0)
 
-l2 = tk.Label(root, text="PRIMARY RESOURCES\n====================\nSphalerite", font="Helvetica")
+l2 = tk.Label(root, text="PRIMARY RESOURCES\n====================\nWolframite", font="Helvetica")
 l2.place(x=50, y=300)
 
-l3 = tk.Label(root, text="SECONDARY RESOURCES\n====================\nMalachite", font="Helvetica")
+l3 = tk.Label(root, text="SECONDARY RESOURCES\n====================\nSphalerite", font="Helvetica")
 l3.place(x=50, y=420)
-
-l4 = tk.Label(root, text="GASES\n====================\nHydrogen: 75ppu\nNitrogen: 100ppu", font="Helvetica")
-l4.place(x=50, y=520)
 
 #Insert icons into window
 i1 = tk.Label(root, image=compound_icon, height=20, width=20)
@@ -82,17 +80,11 @@ i8.place(x=55, y=215)
 i9 = tk.Label(root, image=astronium_icon, height=20, width=20)
 i9.place(x=55, y=235)
 
-i10 = tk.Label(root, image=sphalerite_icon, height=20, width=20)
+i10 = tk.Label(root, image=wolframite_icon, height=20, width=20)
 i10.place(x=55, y=350)
 
-i11 = tk.Label(root, image=malachite_icon, height=20, width=20)
+i11 = tk.Label(root, image=sphalerite_icon, height=20, width=20)
 i11.place(x=55, y=470)
-
-i12 = tk.Label(root, image=hydrogen_icon, height=20, width=20)
-i12.place(x=55, y=570)
-
-i13 = tk.Label(root, image=nitrogen_icon, height=20, width=20)
-i13.place(x=55, y=595)
 
 
 #Run program

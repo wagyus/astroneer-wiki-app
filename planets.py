@@ -5,18 +5,25 @@ from subprocess import call
 
 sylvia = 'planets/sylvia_info.py'
 sylvia_pic = 'planets/sylvia_pic.py'
+sylvia_bio = ''
 desolo = 'planets/desolo_info.py'
 desolo_pic = 'planets/desolo_pic.py'
+desolo_bio = ''
 calidor = 'planets/calidor_info.py'
 calidor_pic = 'planets/calidor_pic.py'
+calidor_bio = ''
 vesania = 'planets/vesania_info.py'
 vesania_pic = 'planets/vesania_pic.py'
+vesania_bio = ''
 novus = 'planets/novus_info.py'
 novus_pic = 'planets/novus_pic.py'
+novus_bio = ''
 glacio = 'planets/glacio_info.py'
 glacio_pic = 'planets/glacio_pic.py'
+glacio_bio = ''
 atrox = 'planets/atrox_info.py'
 atrox_pic = 'planets/atrox_pic.py'
+atrox_bio = ''
 
 def callpy1():
     call(['python', sylvia])
@@ -62,8 +69,12 @@ def callatrox_pic():
 
 root = tk.Tk()
 root.geometry('400x400')
-root.title('Astroneer Wiki')
+root.title('Planet Selection')
 l1 = tk.Label(text="Astroneer Wiki", fg="black", bg="white")
+
+icon_img = 'images/icon_astro.jpg'
+icon = ImageTk.PhotoImage(Image.open(icon_img))
+root.tk.call('wm','iconphoto', root._w, icon)
 
 '''
 Set image paths

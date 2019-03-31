@@ -2,7 +2,7 @@ __author__ = 'chrismelnyk'
 import tkinter as tk
 from subprocess import call
 
-planets = 'planets/planet_interface.py'
+planets = 'planets.py'
 workshop = ''
 kitchen = ''
 intake = ''
@@ -20,8 +20,8 @@ def callpy4():
     call(['python', intake])
 
 root = tk.Tk()
-img = tk.Image("photo", file="p_icon.png")
-root.tk.call('wm','iconphoto', root._w, img)
+#img = tk.Image("photo", file="p_icon.png")
+#root.tk.call('wm','iconphoto', root._w, img)
 root.geometry('400x400')
 root.title('Astroneer Wiki')
 l1 = tk.Label(text="Astroneer Wiki", fg="black", bg="white")

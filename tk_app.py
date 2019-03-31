@@ -1,6 +1,7 @@
 __author__ = 'chrismelnyk'
 import tkinter as tk
 from subprocess import call
+from PIL import ImageTk,Image
 
 planets = 'planets.py'
 item_list = 'item_list'
@@ -20,8 +21,11 @@ def callpy4():
     call(['python', intake])
 
 root = tk.Tk()
-#img = tk.Image("photo", file="p_icon.png")
-#root.tk.call('wm','iconphoto', root._w, img)
+
+icon_img = 'images/icon_astro.jpg'
+icon = ImageTk.PhotoImage(Image.open(icon_img))
+root.tk.call('wm','iconphoto', root._w, icon)
+
 root.geometry('400x400')
 root.title('Astroneer Wiki')
 l1 = tk.Label(text="Astroneer Wiki", fg="black", bg="white")

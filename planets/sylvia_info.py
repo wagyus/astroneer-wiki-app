@@ -4,8 +4,11 @@ from PIL import ImageTk,Image
 root = tk.Tk()
 secondLevel = tk.Frame(master=root)
 root.geometry('350x650')
-root.title('Astroneer Wiki')
-l1 = tk.Label(text="Sylvia Planet Info", fg="black", bg="snow")
+root.title('Sylvia Planet Info')
+
+icon_img = 'images/icon_astro.jpg'
+icon = ImageTk.PhotoImage(Image.open(icon_img))
+root.tk.call('wm','iconphoto', root._w, icon)
 
 #Load images into variables
 img_icon = "images/planets/planet.icon/sylvia.icon.png"

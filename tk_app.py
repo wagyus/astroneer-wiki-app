@@ -3,7 +3,7 @@ import tkinter as tk
 from subprocess import call
 
 planets = 'planets.py'
-workshop = ''
+item_list = 'item_list'
 kitchen = ''
 intake = ''
 
@@ -11,7 +11,7 @@ def callpy1():
     call(['python', planets] )
 
 def callpy2():
-    call(['python', workshop])
+    call(['python', item_list])
 
 def callpy3():
     call(['python', workshop])
@@ -27,9 +27,9 @@ root.title('Astroneer Wiki')
 l1 = tk.Label(text="Astroneer Wiki", fg="black", bg="white")
 
 b1 = tk.Button(root, text='Planets', command=callpy1, height=6, width=57).grid(row=0, column=1)
-b2 = tk.Button(root, text='Workshop Calculator', command=callpy2, height=6, width=57).grid(row=1, column=1)
-b3 = tk.Button(root, text='Kitchen/Canteen Calculator (WIP PROBABLY WILL NOT WORK)', command=callpy3, height=6, width=57).grid(row=2, column=1)
-b4 = tk.Button(root, text='Prisoner Intake Guard Calculator', command=callpy4, height=6, width=57).grid(row=3, column=1)
+b2 = tk.Button(root, text='Item List', command=callpy2, height=6, width=57).grid(row=1, column=1)
+b3 = tk.Button(root, text='', command=callpy3, height=6, width=57).grid(row=2, column=1)
+b4 = tk.Button(root, text='', command=callpy4, height=6, width=57).grid(row=3, column=1)
 
 
 root.mainloop()

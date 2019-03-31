@@ -4,15 +4,22 @@ from PIL import ImageTk,Image
 from subprocess import call
 
 sylvia = 'planets/sylvia_info.py'
+sylvia_pic = 'planets/sylvia_pic.py'
 desolo = 'planets/desolo_info.py'
+desolo_pic = 'planets/desolo_pic.py'
 calidor = 'planets/calidor_info.py'
-vesania = ''
-novus = ''
-glacio = ''
-atrox = ''
+calidor_pic = 'planets/calidor_pic.py'
+vesania = 'planets/vesania_info.py'
+vesania_pic = 'planets/vesania_pic.py'
+novus = 'planets/novus_info.py'
+novus_pic = 'planets/novus_pic.py'
+glacio = 'planets/glacio_info.py'
+glacio_pic = 'planets/glacio_pic.py'
+atrox = 'planets/atrox_info.py'
+atrox_pic = 'planets/atrox_pic.py'
 
 def callpy1():
-    call(['python', sylvia] )
+    call(['python', sylvia])
 
 def callpy2():
     call(['python', desolo])
@@ -32,9 +39,29 @@ def callpy6():
 def callpy7():
     call(['python', atrox])
 
+def callsylvia_pic():
+    call(['python', sylvia_pic])
+
+def calldesolo_pic():
+    call(['python', desolo_pic])
+
+def callcalidor_pic():
+    call(['python', calidor_pic])
+
+def callvesania_pic():
+    call(['python', vesania_pic])
+
+def callnovus_pic():
+    call(['python', novus_pic])
+
+def callglacio_pic():
+    call(['python', glacio_pic])
+
+def callatrox_pic():
+    call(['python', atrox_pic])
+
 root = tk.Tk()
-secondLevel = tk.Frame(master=root).grid(row=0, column=0)
-root.geometry('100x400')
+root.geometry('400x400')
 root.title('Astroneer Wiki')
 l1 = tk.Label(text="Astroneer Wiki", fg="black", bg="white")
 
@@ -66,7 +93,7 @@ img_7 = ImageTk.PhotoImage(Image.open(img_atro))
 '''
 Set images into GUI
 '''
-
+'''
 image1 = tk.Label(secondLevel, image = img_1, height=50, width=50).grid(row=0, column=0)
 image2 = tk.Label(secondLevel, image = img_2, height=50, width=50).grid(row=1, column=0)
 image3 = tk.Label(secondLevel, image = img_3, height=50, width=50).grid(row=2, column=0)
@@ -74,17 +101,33 @@ image4 = tk.Label(secondLevel, image = img_4, height=50, width=50).grid(row=3, c
 image5 = tk.Label(secondLevel, image = img_5, height=50, width=50).grid(row=4, column=0)
 image6 = tk.Label(secondLevel, image = img_6, height=50, width=50).grid(row=5, column=0)
 image7 = tk.Label(secondLevel, image = img_7, height=50, width=50).grid(row=6, column=0)
-
+'''
 '''
 Create buttons
 '''
 
-b1 = tk.Button(root, text='Sylvia', command=callpy1, height=2, width=5).grid(row=0, column=1)
-b2 = tk.Button(root, text='Desolo', command=callpy2, height=2, width=5).grid(row=1, column=1)
-b3 = tk.Button(root, text='Calidor', command=callpy3, height=2, width=5).grid(row=2, column=1)
-b4 = tk.Button(root, text='Vesania', command=callpy4, height=2, width=5).grid(row=3, column=1)
-b5 = tk.Button(root, text='Novus', command=callpy4, height=2, width=5).grid(row=4, column=1)
-b6 = tk.Button(root, text='Glacio', command=callpy4, height=2, width=5).grid(row=5, column=1)
-b7 = tk.Button(root, text='Atrox', command=callpy4, height=2, width=5).grid(row=6, column=1)
+b1 = tk.Button(root, image = img_1, command=callsylvia_pic, height=50, width=50).grid(row=1, column=0)
+b2 = tk.Button(root, image = img_2, command=calldesolo_pic, height=50, width=50).grid(row=2, column=0)
+b3 = tk.Button(root, image = img_3, command=callcalidor_pic, height=50, width=50).grid(row=3, column=0)
+b4 = tk.Button(root, image = img_4, command=callvesania_pic, height=50, width=50).grid(row=4, column=0)
+b5 = tk.Button(root, image = img_5, command=callnovus_pic, height=50, width=50).grid(row=5, column=0)
+b6 = tk.Button(root, image = img_6, command=callglacio_pic, height=50, width=50).grid(row=6, column=0)
+b7 = tk.Button(root, image = img_7, command=callatrox_pic, height=50, width=50).grid(row=7, column=0)
+
+b8 = tk.Button(root, text = 'Sylvia Resources', command=callpy1, height=3, width=20).grid(row=1, column=1)
+b9 = tk.Button(root, text='Desolo Resources', command=callpy2, height=3, width=20).grid(row=2, column=1)
+b10 = tk.Button(root, text='Calidor Resources', command=callpy3, height=3, width=20).grid(row=3, column=1)
+b11 = tk.Button(root, text='Vesania Resources', command=callpy4, height=3, width=20).grid(row=4, column=1)
+b12 = tk.Button(root, text='Novus Resources', command=callpy5, height=3, width=20).grid(row=5, column=1)
+b13 = tk.Button(root, text='Glacio Resources', command=callpy6, height=3, width=20).grid(row=6, column=1)
+b14 = tk.Button(root, text='Atrox Resources', command=callpy7, height=3, width=20).grid(row=7, column=1)
+
+b15 = tk.Button(root, text = 'Bio', command=callpy1, height=3, width=20).grid(row=1, column=2)
+b16 = tk.Button(root, text='Bio', command=callpy2, height=3, width=20).grid(row=2, column=2)
+b17 = tk.Button(root, text='Bio', command=callpy3, height=3, width=20).grid(row=3, column=2)
+b18 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=4, column=2)
+b19 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=5, column=2)
+b20 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=6, column=2)
+b21 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=7, column=2)
 
 root.mainloop()

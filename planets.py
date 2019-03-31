@@ -5,7 +5,7 @@ from subprocess import call
 
 sylvia = 'planets/sylvia_info.py'
 desolo = 'planets/desolo_info.py'
-calidor = ''
+calidor = 'planets/calidor_info.py'
 vesania = ''
 novus = ''
 glacio = ''

@@ -50,7 +50,6 @@ l2.place(x=50, y=300)
 l3 = tk.Label(root, text="SECONDARY RESOURCES\n====================\nWolframite", font="Helvetica")
 l3.place(x=50, y=420)
 
-
 l4 = tk.Label(root, text="GASES\n====================\nHydrogen: 50ppu\nSulfur: 100ppu", font="Helvetica")
 l4.place(x=50, y=520)
 

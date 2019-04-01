@@ -4,8 +4,8 @@ from subprocess import call
 from PIL import ImageTk,Image
 
 planets = 'planets.py'
-item_list = 'item_list'
-kitchen = ''
+item_list = 'item_list.py'
+soil_calc = 'soil/interface.py'
 intake = ''
 
 def callpy1():
@@ -15,7 +15,7 @@ def callpy2():
     call(['python', item_list])
 
 def callpy3():
-    call(['python', workshop])
+    call(['python', soil_calc])
 
 def callpy4():
     call(['python', intake])

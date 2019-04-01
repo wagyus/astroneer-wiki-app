@@ -5,7 +5,7 @@ from subprocess import call
 
 sylvia = 'planets/sylvia_info.py'
 sylvia_pic = 'planets/sylvia_pic.py'
-sylvia_bio = ''
+sylvia_bio = 'planets/sylvia_bio.py'
 desolo = 'planets/desolo_info.py'
 desolo_pic = 'planets/desolo_pic.py'
 desolo_bio = ''
@@ -66,6 +66,28 @@ def callglacio_pic():
 
 def callatrox_pic():
     call(['python', atrox_pic])
+
+def callsylvia_bio():
+    call(['python', sylvia_bio])
+
+def callcalidor_bio():
+    call(['python', calidor_bio])
+
+def calldesolo_bio():
+    call(['python', desolo_bio])
+
+def callglacio_bio():
+    call(['python', glacio_bio])
+
+def callnovus_bio():
+    call(['python', novus_bio])
+
+def callvesania_bio():
+    call(['python', vesania_bio])
+
+def callatrox_bio():
+    call(['python', atrox_bio])
+
 
 root = tk.Tk()
 root.geometry('400x400')
@@ -133,12 +155,12 @@ b12 = tk.Button(root, text='Novus Resources', command=callpy5, height=3, width=2
 b13 = tk.Button(root, text='Glacio Resources', command=callpy6, height=3, width=20).grid(row=6, column=1)
 b14 = tk.Button(root, text='Atrox Resources', command=callpy7, height=3, width=20).grid(row=7, column=1)
 
-b15 = tk.Button(root, text = 'Bio', command=callpy1, height=3, width=20).grid(row=1, column=2)
-b16 = tk.Button(root, text='Bio', command=callpy2, height=3, width=20).grid(row=2, column=2)
-b17 = tk.Button(root, text='Bio', command=callpy3, height=3, width=20).grid(row=3, column=2)
-b18 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=4, column=2)
-b19 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=5, column=2)
-b20 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=6, column=2)
-b21 = tk.Button(root, text='Bio', command=callpy4, height=3, width=20).grid(row=7, column=2)
+b15 = tk.Button(root, text = 'Bio', command=callsylvia_bio, height=3, width=20).grid(row=1, column=2)
+b16 = tk.Button(root, text='Bio', command=calldesolo_bio, height=3, width=20).grid(row=2, column=2)
+b17 = tk.Button(root, text='Bio', command=callcalidor_bio, height=3, width=20).grid(row=3, column=2)
+b18 = tk.Button(root, text='Bio', command=callvesania_bio, height=3, width=20).grid(row=4, column=2)
+b19 = tk.Button(root, text='Bio', command=callnovus_bio, height=3, width=20).grid(row=5, column=2)
+b20 = tk.Button(root, text='Bio', command=callglacio_bio, height=3, width=20).grid(row=6, column=2)
+b21 = tk.Button(root, text='Bio', command=callatrox_bio, height=3, width=20).grid(row=7, column=2)
 
 root.mainloop()

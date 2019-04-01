@@ -25,5 +25,4 @@ sylvia_planet = ImageTk.PhotoImage(Image.open(img))
 imageSly = tk.Label(root, image=sylvia_planet)
 imageSly.pack()
 
-
 root.mainloop()

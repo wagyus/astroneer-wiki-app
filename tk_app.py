@@ -6,7 +6,7 @@ from PIL import ImageTk,Image
 planets = 'planets.py'
 item_list = 'item_list.py'
 soil_calc = 'soil/soil_interface.py'
-intake = ''
+credits_py = 'credits.py'
 
 def callpy1():
     call(['python', planets] )
@@ -18,7 +18,7 @@ def callpy3():
     call(['python', soil_calc])
 
 def callpy4():
-    call(['python', intake])
+    call(['python', credits_py])
 
 root = tk.Tk()
 
@@ -33,7 +33,7 @@ l1 = tk.Label(text="Astroneer Wiki", fg="black", bg="white")
 b1 = tk.Button(root, text='Planets', command=callpy1, height=6, width=28).grid(row=0, column=1)
 b2 = tk.Button(root, text='Item List', command=callpy2, height=6, width=28).grid(row=1, column=1)
 b3 = tk.Button(root, text='Soil Centrifuge Calculator', command=callpy3, height=6, width=28).grid(row=2, column=1)
-b4 = tk.Button(root, text='', command=callpy4, height=6, width=28).grid(row=3, column=1)
+b4 = tk.Button(root, text='Credits', command=callpy4, height=6, width=28).grid(row=3, column=1)
 
 
 root.mainloop()

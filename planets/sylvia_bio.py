@@ -16,7 +16,7 @@ img_1 = ImageTk.PhotoImage(Image.open(img_planet))
 imgSyl = tk.Label(root, image=img_1, width=100, height=100)
 imgSyl.pack()
 
-textSyl = tk.Label(root, text="Sylvia is the first planet an adventurer will explore.\n\nIt's terrain is easy to traverse on foot and on vehicles.\n\nThe planets gives medium wind power and medium solar power.\n\nIt provides a wide amount of resources with large \ndeposits of compound, resin and graphite appearing on its surface.\nAnd in mountainous areas, malachite can be found in small amounts\n\nOn the planet's surface, there are 6 total Portals needing\nto be linked together. Around 8 small gerneraters are\nneeded to power each portal to full. With the Core Portal\nneeding Quartz to get the Geometric Triptych.\n")
+textSyl = tk.Label(root, text="Sylvia is the first planet an adventurer will explore.\n\nIt's terrain is easy to traverse on foot and on vehicles.\n\nThe planets gives medium wind power and medium solar power.\n\nIt provides a wide amount of resources with large \ndeposits of compound, resin and graphite appearing on its surface.\nMalachite can be found in small amounts in the mountainous areas.\n\nOn the planet's surface, there are 6 total Portals needing\nto be linked together. Around 8 small gerneraters are\nneeded to power each portal to full, with the Core Portal\nneeding Quartz to get the Geometric Triptych.\n")
 textSyl.pack()
 
 img = 'images/planets/planet.space/sylvia.space.png'

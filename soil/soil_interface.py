@@ -6,15 +6,13 @@ import tkinter as tk
 from subprocess import call
 from PIL import ImageTk,Image
 
-compound = ''
-resin = ''
-ammonium = ''
-clay = ''
-organic = ''
-quartz = ''
-graphite = ''
-
-
+compound = 'soil/compound.py'
+resin = 'soil/resin.py'
+ammonium = 'soil/ammonium.py'
+clay = 'soil/clay.py'
+organic = 'soil/organic.py'
+quartz = 'soil/quartz.py'
+graphite = 'soil/graphite.py'
 
 def callcompound():
     call(['python', compound])
@@ -37,8 +35,6 @@ def callquartz():
 def callgraphite():
     call(['python', graphite])
 
-
-
 root = tk.Tk()
 
 icon_img = 'images/icon_astro.jpg'
@@ -47,7 +43,6 @@ root.tk.call('wm','iconphoto', root._w, icon)
 
 root.geometry('742x105')
 root.title('Soil Centrifuge - Select a Resource')
-
 
 img_comound = "images/resources/compound.png"
 img_resin = "images/resources/resin.png"
@@ -65,12 +60,12 @@ graphite_icon = ImageTk.PhotoImage(Image.open(img_graphite))
 quartz_icon = ImageTk.PhotoImage(Image.open(img_quartz))
 ammonium_icon = ImageTk.PhotoImage(Image.open(img_ammonium))
 
-tk.Button(root, image=compound_icon, width=100, height=100).grid(row=0, column=0)
-tk.Button(root, image=resin_icon, width=100, height=100).grid(row=0, column=1)
-tk.Button(root, image=organic_icon, width=100, height=100).grid(row=0, column=2)
-tk.Button(root, image=clay_icon, width=100, height=100).grid(row=0, column=3)
-tk.Button(root, image=quartz_icon, width=100, height=100).grid(row=0, column=4)
-tk.Button(root, image=graphite_icon, width=100, height=100).grid(row=0, column=5)
-tk.Button(root, image=ammonium_icon, width=100, height=100).grid(row=0, column=6)
+tk.Button(root, image=compound_icon, command=callcompound, width=100, height=100).grid(row=0, column=0)
+tk.Button(root, image=resin_icon, command=callresin, width=100, height=100).grid(row=0, column=1)
+tk.Button(root, image=organic_icon, command=callorganic, width=100, height=100).grid(row=0, column=2)
+tk.Button(root, image=clay_icon, command=callclay, width=100, height=100).grid(row=0, column=3)
+tk.Button(root, image=quartz_icon,command=callquartz, width=100, height=100).grid(row=0, column=4)
+tk.Button(root, image=graphite_icon,command=callgraphite, width=100, height=100).grid(row=0, column=5)
+tk.Button(root, image=ammonium_icon,command=callammonium, width=100, height=100).grid(row=0, column=6)
 
 root.mainloop()

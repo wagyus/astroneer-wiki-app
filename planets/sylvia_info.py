@@ -45,15 +45,19 @@ nitrogen_icon = ImageTk.PhotoImage(Image.open(img_nitrogen))
 
 #Insert text into window
 l1 = tk.Label(root, text="SYLVIA RESOURCES\n===================\nCompound\nResin\nOrganic\nClay\nGraphite\nQuartz\nLaterite\nAmmonium\nAstronium", font="Helvetica")
+l1.config(font=("Helvetica", 15))
 l1.place(x=50, y=0)
 
 l2 = tk.Label(root, text="PRIMARY RESOURCES\n====================\nSphalerite", font="Helvetica")
+l2.config(font=("Helvetica", 15))
 l2.place(x=50, y=300)
 
 l3 = tk.Label(root, text="SECONDARY RESOURCES\n====================\nMalachite", font="Helvetica")
+l3.config(font=("Helvetica", 15))
 l3.place(x=50, y=420)
 
 l4 = tk.Label(root, text="GASES\n====================\nHydrogen: 75ppu\nNitrogen: 100ppu", font="Helvetica")
+l4.config(font=("Helvetica", 15))
 l4.place(x=50, y=520)
 
 #Insert icons into window

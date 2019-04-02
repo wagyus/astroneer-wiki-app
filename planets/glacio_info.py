@@ -41,15 +41,19 @@ argon_icon = ImageTk.PhotoImage(Image.open(img_argon))
 
 #Insert text into window
 l1 = tk.Label(root, text="GLACIO RESOURCES\n===================\nCompound\nResin\nOrganic\nClay\nGraphite\nQuartz\nLaterite\nAmmonium\nAstronium", font="Helvetica")
+l1.config(font=("Helvetica", 15))
 l1.place(x=50, y=0)
 
 l2 = tk.Label(root, text="PRIMARY RESOURCES\n====================\nTitanite", font="Helvetica")
+l2.config(font=("Helvetica", 15))
 l2.place(x=50, y=300)
 
 l3 = tk.Label(root, text="SECONDARY RESOURCES\n====================\nHematite", font="Helvetica")
+l3.config(font=("Helvetica", 15))
 l3.place(x=50, y=400)
 
 l4 = tk.Label(root, text="GASES\n====================\nArgon: 100ppu", font="Helvetica")
+l4.config(font=("Helvetica", 15))
 l4.place(x=50, y=500)
 
 #Insert icons into window

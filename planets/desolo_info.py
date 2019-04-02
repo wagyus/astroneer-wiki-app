@@ -69,7 +69,7 @@ i3 = tk.Label(root, image=organic_icon, height=20, width=20)
 i3.place(x=55, y=95)
 
 i4 = tk.Label(root, image=clay_icon, height=20, width=20)
-i4.place(x=55, y=115)
+i4.place(x=55, y=118)
 
 i5 = tk.Label(root, image=graphite_icon, height=20, width=20)
 i5.place(x=55, y=140)

@@ -48,9 +48,11 @@ sulfur_icon = ImageTk.PhotoImage(Image.open(img_sulfur))
 
 #Insert text into window
 l1 = tk.Label(root, text="ATROX RESOURCES\n===================\nCompound\nResin\nOrganic\nClay\nGraphite\nQuartz\nLaterite\nAmmonium\nAstronium", font="Helvetica")
+l1.config(font=("Helvetica", 15))
 l1.place(x=50, y=0)
 
-l4 = tk.Label(root, text="GASES\n====================\nHelium: 25ppu\nMethane: 100ppu\nNitrogen: 50 ppu\nSulfur: 75ppu", font="Helvetica")
+l4 = tk.Label(root, font="helvetica", text="GASES\n====================\nHelium: 25ppu\nMethane: 100ppu\nNitrogen: 50 ppu\nSulfur: 75ppu" )
+l4.config(font=("Helvetica", 15))
 l4.place(x=50, y=300)
 
 #Insert icons into window

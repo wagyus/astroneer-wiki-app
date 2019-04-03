@@ -1,5 +1,5 @@
 # astroneer-wiki-app
-Information for the game Astroneer made in Python with tkinter.
+Information for the game Astroneer made in Python with tkinter. Contains spoilers for the game, mainly in the planet biographies.
 
 
 Requires Python 3.6.5 (or higher), tkinter, and Pillows
